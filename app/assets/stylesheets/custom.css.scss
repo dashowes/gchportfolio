@@ -2,7 +2,6 @@
 @import "bootstrap";
 
 /* mixins, variables, etc. */
-
 $gray-medium-light: #eaeaea;
 
 /* universal */
@@ -27,6 +26,7 @@ textarea {
 }
 
 li {
+    font-family: Noto Serif, serif;
     list-style: none;
     padding-left: 22px;
     text-indent: -22px;
@@ -54,6 +54,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  font-family: Lato, Helvetica, sans-serif;
 }
 
 h1 {
@@ -70,10 +71,12 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: $gray-light;
+  font-weight: 300;
 }
 
 h4 {
     font-size: 1.35em;
+    font-weight: 100;
 }
 
 h3, h5 {
@@ -84,6 +87,7 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
   text-align: justify;
+  font-family: Noto Serif, serif;
 }
 
 
@@ -98,6 +102,7 @@ p {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  font-family: Noto Serif, serif;
   &:hover {
     color: white;
     text-decoration: none;
@@ -111,6 +116,8 @@ footer {
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
+  font-family: Lato, Helvetica, sans-serif;
+  font-weight: 100;
   a {
     color: $gray;
     &:hover {
