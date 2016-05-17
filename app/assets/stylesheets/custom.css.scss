@@ -3,11 +3,12 @@
 
 /* mixins, variables, etc. */
 $gray-medium-light: #eaeaea;
+$gray-medium-dark: #3f3f3f;
 
 /* universal */
 
 body {
-  padding-top: 60px;
+  padding-top: 55px;
 }
 
 section {
@@ -25,42 +26,78 @@ textarea {
   }
 }
 
-li {
-    font-family: Noto Serif, serif;
-    list-style: none;
-    padding-left: 22px;
-    text-indent: -22px;
-}
-
 img {
     max-height: 100%;
     max-width: 100%;
 }
 
+.bighead {
+    margin: 0 0 0 0;
+    padding: 2px;
+}
+
+.smallhead {
+    margin: 0 0 0 0;
+}
+
+.pagehead {
+    text-align: center;
+    position: fixed;
+}
+
+.mainpage {
+    width: 100%;
+}
+
+.gch-home {
+    background-color: $gray-medium-light;
+    margin: 0 0 0 0;
+    width: 100%;
+    padding-bottom: 55px;
+}
+
 .geoff-main {
     text-align: center;
     height: 315px;
+    margin: 0 0 0 0;
 }
 
 .headshot {
     border-radius: 50%;
+    z-index: 1;
+}
+
+.gch-book {
+    padding: 45px;
+}
+
+.gch-book-inner {
+    border: 7px solid $gray-medium-light;
+    &:hover {
+        cursor: pointer;
+        border: 7px solid $gray-medium-dark;
+        opacity: .75;
+    }
 }
 
 .big-email-icon {
     text-align: center;
     height: 225px;
 }
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-family: Lato, Helvetica, sans-serif;
+  z-index: 1;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  padding-top: 45px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -77,9 +114,12 @@ h2 {
 h4 {
     font-size: 1.35em;
     font-weight: 100;
+    padding-left: 20px;
+
 }
 
 h3, h5 {
+    font-weight: 300;
     text-align: center;
 }
 
@@ -88,6 +128,20 @@ p {
   line-height: 1.7em;
   text-align: justify;
   font-family: Noto Serif, serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ul {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+li {
+    font-family: Noto Serif, serif;
+    list-style: none;
+    padding-left: 22px;
+    text-indent: -22px;
 }
 
 
@@ -112,7 +166,8 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 55px;
+  margin-left: 15px;
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
