@@ -50,10 +50,31 @@ img {
 }
 
 .gch-home {
-    background-color: $gray-medium-light;
+    background-color: white;
     margin: 0 0 0 0;
     width: 100%;
     padding-bottom: 55px;
+    opacity: .89;
+    position: relative;
+    overflow: hidden;
+    h1, h3, h5 {
+        position: relative;
+        z-index: 2;
+    }
+    h3, h5 {
+        color: white;
+        z-index: 2;
+        font-weight: 400;
+    }
+
+    .backgroundpic {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.45;
+    }
 }
 
 .geoff-main {
@@ -64,11 +85,23 @@ img {
 
 .headshot {
     border-radius: 50%;
-    z-index: 1;
+    z-index: 2;
+    opacity: .92;
+}
+
+.gch-about {
+    background-color: black;
+    margin: 0 0 0 0;
+    width: 100;
+    padding: 5px 45px 55px 45px;
+    opacity: .86;
+    h1, h3, p {
+        color: white;
+    }
 }
 
 .gch-book {
-    padding: 45px;
+    padding: 35px 45px 35px 45px;
 }
 
 .gch-book-inner {
@@ -77,6 +110,37 @@ img {
         cursor: pointer;
         border: 7px solid $gray-medium-dark;
         opacity: .75;
+    }
+}
+
+.gch-book-clicked {
+    opacity: .25;
+}
+
+.gch-book-blurb {
+    color: white;
+    padding: 65px 105px 75px 75px;
+    position: absolute;
+    z-index: 1;
+}
+
+.gch-bibliography {
+    background-color: $gray-medium-light;
+    margin: 0 0 0 0;
+    padding-bottom: 55px;
+    opacity: .89;
+    h1, h4, li {
+        color: $gray-medium-dark;
+    }
+}
+
+.gch-contact {
+    background-color: $gray-medium-dark;
+    margin: 0 0 0 0;
+    padding-bottom: 55px;
+    opacity: .95;
+    h1 {
+        color: $gray-medium-light;
     }
 }
 
@@ -123,6 +187,13 @@ h3, h5 {
     text-align: center;
 }
 
+h6 {
+    font-weight: 100;
+    color: white;
+    position: relative;
+    padding-left: 75px;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -166,9 +237,10 @@ li {
 /* footer */
 
 footer {
-  margin-top: 55px;
+  margin-top: 15px;
   margin-left: 15px;
   padding-top: 5px;
+  padding-bottom: 25px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
   font-family: Lato, Helvetica, sans-serif;

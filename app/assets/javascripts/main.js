@@ -1,0 +1,1 @@
+$(".gch-book-blurb").hide();
