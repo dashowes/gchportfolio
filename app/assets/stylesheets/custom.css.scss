@@ -49,6 +49,10 @@ img {
     width: 100%;
 }
 
+.clicc {
+    color: white;
+}
+
 .gch-home {
     background-color: white;
     margin: 0 0 0 0;
@@ -299,4 +303,22 @@ footer {
       margin-left: 15px;
     }
   }
+}
+
+// Pads and larger phones
+@media only screen and (max-width: 760px) {
+    body {
+        padding-top: 5px;
+    }
+    header {
+        display: none;
+    }
+}
+
+// Mobile
+@media only screen and (max-width: 480px) {
+    .gch-book-blurb {
+        font-size: .65em;
+        padding: 15px 75px 25px 25px;
+    }
 }
