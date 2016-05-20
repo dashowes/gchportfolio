@@ -1,42 +1,41 @@
-<div class="gch-home container-fluid">
+<div class="gch-home container-fluid" id="homehead">
     <h1>Geoffrey C. Howes</h1>
     <div class="geoff-main">
-        <%= image_tag "Howes_Head_Shot.jpg", :class => "headshot" %>
+        <%= image_tag "headshot.jpg", :class => "headshot" %>
     </div>
     <h3>Literary Translator</h3>
     <h5>German to English</h5>
     <h5>Specializing in Austrian Literature</h5>
 </div>
 
-<div class="gch-about container-fluid">
+<div class="gch-about container-fluid" id="abouthead">
     <h1>About the Translator</h1>
     <h3>Geoffrey C. Howes has published four books translated from German to English:</h3>
     <div class="row">
         <div class="gch-book col-md-6">
-            <!--<p class="gch-book-blurb">-->
-            <!--    "The title notwithstanding, the novellas in Three Women tell the stories of three men. The three women are seen from the distinctly masculine perspectives of the three male protagonists, and they have the literary role of catalysts for the men’s experiences, as the separate worlds the men and women inhabit intersect in sexual association. Besides gender roles, other differences confront each other as well: educated middle class versus petite bourgeoisie; German versus Czech; northern Europe versus southern Europe; adventure versus domesticity; and modernity versus pre-modernity."-->
-            <!--<br><br>&mdash;From the translator’s foreword</p>-->
-            <%= image_tag "Three_Women_Cover.jpeg", :class => "gch-book-inner" %>
+            <p class="gch-book-blurb" id="blurb-threewomen">
+                "The title notwithstanding, the novellas in <em>Three Women</em> tell the stories of three men. The three women are seen from the distinctly masculine perspectives of the three male protagonists, and they have the literary role of catalysts for the men’s experiences, as the separate worlds the men and women inhabit intersect in sexual association. Besides gender roles, other differences confront each other as well: educated middle class versus petite bourgeoisie; German versus Czech; northern Europe versus southern Europe; adventure versus domesticity; and modernity versus pre-modernity."
+            <br><br>&mdash;From the translator’s foreword</p>
+            <%= image_tag "threewomen.jpeg", :class => "gch-book-inner", :id => "inner-threewomen" %>
         </div>
         <div class="gch-book col-md-6">
-            <%= image_tag "Metropolis_Vienna_Cover 1.jpeg", :class => "gch-book-inner" %>
+            <p class="gch-book-blurb" id="blurb-metropolis">Rosei’s Vienna is not at all the black and white Expressionist-like world of Carol Reed’s film, <em>The Third Man</em>, a world reminding everyone—characters and viewers both—of that great city’s monstrous acts and the culture’s fall from grace. Instead, Rosei’s figures—caught up in a society of avoidance—pick up existence as if the War had not occurred, attempting to ignore or outrun their terrible past in a rush for money and success.
+            <br><br>&mdash;Douglas Messerli in <em>EXPLORINGfictions</em></p>
+            <%= image_tag "metropolis.jpeg", :class => "gch-book-inner", :id => "inner-metropolis" %>
         </div>
     </div>
     <div class="row">
         <div class="gch-book col-md-6">
-            <%= image_tag "Whole_of_Life_Cover 1.jpeg", :class => "gch-book-inner" %>
+            <p class="gch-book-blurb" id="blurb-wholeoflife">The book is very funny and sprawling. The ethos of improvisation is most noticeable in Laederach’s pastichework. Different styles and references are co-opted and incorporated as a sort of self-analysis. ... The novel seeps deadpan. And translator Geoffrey Howes does a great job catching its talky aspect, this very reminiscent of Renata Adler’s <em>Pitch Dark</em>.
+            <br><br>&mdash;Joseph Houlihan in <em>HTML GIANT</em></p>
+            <%= image_tag "wholeoflife.jpeg", :class => "gch-book-inner", :id => "inner-wholeoflife" %>
         </div>
         <div class="gch-book col-md-6">
-            <%= image_tag "Ruthless_Cover.jpeg", :class => "gch-book-inner" %>
+            <p class="gch-book-blurb" id="blurb-ruthless">Howes’s translation of the sometimes difficult and arcane texts of Peter Rosei is elegant. He deftly replicates the poetic language that characterizes even the prose selections of this volume and reveals a gift for nuance and plasticity of meaning and <em>entendre</em>. <em>Ruthless</em> is ... a trove of wonderful short writings, including short stories, poetry, aphorisms from the <em>Philosophical Notebook</em>, and an excerpt from the novel <em>Persona</em>.  
+            <br><br>&mdash;Rebecca Thomas in <em>Modern Austrian Literature</em></p>
+            <%= image_tag "ruthless.jpeg", :class => "gch-book-inner", :id => "inner-ruthless" %>
         </div>
     </div>
-        <!--<ul class="about">-->
-        <!--    <li>Robert Musil, Three Women (Green Integer, 2014).</li>-->
-        <!--    <li>Jürg Laederach, The Whole of Life (Dalkey Archive, 2014)</li>-->
-        <!--    <li>Peter Rosei, Metropolis Vienna (Green Integer, 2009)</li>-->
-        <!--    <li>Peter Rosei, Ruthless and Other Writings (Ariadne Press, 2003)</li>-->
-        <!--</ul>-->
-    
     <p>
         He is also co-translator with Elfriede Czurda of <em>Rosmarie Waldrop, Ins Abstrakte treiben</em> (Vienna: Edition Korrespondenzen, 2015). 
     </p>
@@ -48,7 +47,7 @@
     </p>
 </div>
 
-<div class="gch-bibliography container-fluid">
+<div class="gch-bibliography container-fluid" id="bibliohead">
     <h1>Bibliography</h1>
     <h4>Translated Books</h4>
         <ul class="biblio">
@@ -121,7 +120,7 @@
         </ul>
 </div>
 
-<div class="gch-contact container-fluid">
+<div class="gch-contact container-fluid" id="contacthead">
     <h1>Contact Geoffrey</h1>
     <div class="big-email-icon">
         <%= link_to image_tag("envelope.png"), "mailto:howesgeoffrey@hotmail.com" %>

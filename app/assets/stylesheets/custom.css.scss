@@ -88,6 +88,10 @@ img {
     opacity: .92;
 }
 
+hr {
+    display: none;
+}
+
 .gch-about {
     background-color: black;
     margin: 0 0 0 0;
@@ -104,23 +108,51 @@ img {
 }
 
 .gch-book-inner {
-    border: 7px solid $gray-medium-light;
     &:hover {
         cursor: pointer;
-        border: 7px solid $gray-medium-dark;
-        opacity: .75;
     }
 }
 
-.gch-book-clicked {
-    opacity: .25;
-}
-
 .gch-book-blurb {
-    color: white;
     padding: 65px 105px 75px 75px;
     position: absolute;
     z-index: 1;
+}
+
+#inner-threewomen {
+    border: 7px solid $gray-medium-light;
+}
+
+#blurb-threewomen {
+    color: white;
+}
+
+#inner-metropolis {
+    border: 7px solid $gray-medium-light;
+}
+
+#blurb-metropolis {
+    color: white;
+}
+
+#inner-wholeoflife {
+    border: 7px solid $gray-medium-light;
+}
+
+#blurb-wholeoflife {
+    color: white;
+}
+
+#inner-ruthless {
+    border: 7px solid $gray-medium-light;
+}
+
+#blurb-ruthless {
+    color: white;
+}
+
+.book-clicked {
+    opacity: .25;
 }
 
 .gch-bibliography {
@@ -131,12 +163,18 @@ img {
     h1, h4, li {
         color: $gray-medium-dark;
     }
+    h4 {
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 .gch-contact {
     background-color: $gray-medium-dark;
     margin: 0 0 0 0;
-    padding-bottom: 55px;
+    padding-top: 85px;
+    padding-bottom: 115px;
     opacity: .95;
     h1 {
         color: $gray-medium-light;
