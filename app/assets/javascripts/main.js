@@ -14,6 +14,8 @@ $(function() {
 	
     $(".gch-book-blurb").hide();
     
+    $(".biblio, .biblio-sub").hide();
+    
     $("#inner-threewomen").click(function() {
         $("#inner-threewomen").addClass("book-clicked");
         $("#blurb-threewomen").fadeIn("fast");
@@ -48,5 +50,35 @@ $(function() {
             $(this).fadeOut("fast");
             $("#inner-ruthless").removeClass("book-clicked");
         });
+    });
+    
+    $("#trans-books").click(function() {
+        $(this).toggleClass("h4clicked");
+        $("#bib1").slideToggle("slow");
+    });
+    
+    $("#trans-articles").click(function() {
+        $(this).toggleClass("h4clicked");
+        $("#bib2, .biblio-sub").slideToggle("slow");
+    });
+    
+    $("#trans-pubs").click(function() {
+        $(this).toggleClass("h4clicked");
+        $("#bib3").slideToggle("slow");
+    });
+    
+    $("#trans-pres").click(function() {
+        $(this).toggleClass("h4clicked");
+        $("#bib4").slideToggle("slow");
+    });
+    
+    $("#trans-radio").click(function() {
+        $(this).toggleClass("h4clicked");
+        $("#bib5").slideToggle("slow");
+    });
+    
+    $("#trans-reviews").click(function() {
+        $(this).toggleClass("h4clicked");
+        $("#bib6").slideToggle("slow");
     });
 });
